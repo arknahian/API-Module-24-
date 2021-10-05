@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <h2>API and stuff</h2>
+    <script>
+        const person = {
+            name: 'John',
+            age: 36,
+            favPlace : {
+                place1: "Silicon Valley",
+                place2: "Manhattan",
+            },
+            friendsAge : [12, 32, 43, 21]
+        }
+        const personJSON = JSON.stringify(person);
+        console.log(personJSON);
+        const personObj = JSON.parse(personJSON);
+        console.log(personObj);
+    </script>
+</body>
+</html>
